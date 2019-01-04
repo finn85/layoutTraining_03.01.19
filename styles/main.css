@@ -103,7 +103,19 @@ header .nav-part nav ul .sign-up {
 .info p {
   margin-bottom: 15px;
   font-size: 13px;
+  line-height: 20px;
   color: #43515a;
+}
+
+.catalogue {
+  padding-bottom: 20px;
+}
+
+.catalogue .item {
+  margin: 20px auto 0;
+  height: 202px;
+  width: 220px;
+  background: gray;
 }
 
 footer {

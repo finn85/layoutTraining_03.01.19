@@ -1,5 +1,3 @@
-@import 'variables';
-
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +11,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+@import 'variables';
 
 @import 'header';
 @import 'info';
+@import 'catalogue';
 @import 'footer';
 
