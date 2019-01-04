@@ -1,5 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: radial-gradient(circle at 25% 15%, #3e88b9, transparent 50%), -webkit-gradient(linear, left top, left bottom, from(#316c93), to(#24506d));
+  background: radial-gradient(circle at 25% 15%, #3e88b9, transparent 50%), linear-gradient(#316c93, #24506d);
+  min-height: 550px;
+  color: white;
+}
+
+header .top-part .logo-part {
+  padding: 15px 0 15px 20px;
+}
+
+header .top-part .logo-part p {
+  margin-left: 33px;
+  font-family: "Microsoft New Tai Lue";
+  font-size: 16px;
+  line-height: 16px;
+}
+
+header .top-part .phone-part {
+  padding: 15px 20px 15px 0;
+  font-family: "A Caslon Pro";
+  font-size: 24px;
+  text-align: right;
+}
+
+header .nav-part {
+  min-height: 43px;
+  background-color: #d7d7d7;
+  color: #3a5362;
+  font-family: "Microsoft Sans Serif", sans-serif;
+  padding: 12px 0;
+  position: relative;
+}
+
+header .nav-part::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  height: 4px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(30%, #60a0ca), to(transparent));
+  background: linear-gradient(90deg, transparent, #60a0ca 30% 70%, transparent);
+}
+
+header .nav-part nav ul li {
+  padding: 0;
+}
+
+header .nav-part nav ul li a:hover {
+  color: #3e88b9;
+}
+
+header .nav-part nav ul .menu-item, header .nav-part nav ul .sign-in {
+  margin-left: 35px;
+}
+
+header .nav-part nav ul .slash {
+  margin: 0 5px;
+}
+
+header .nav-part nav ul .sign-up {
+  margin-right: 35px;
+}
+
 .info {
   min-height: 162px;
-  background-color: #c2f2ed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ecfbf9), to(#c2f2ed));
+  background: linear-gradient(#ecfbf9, #c2f2ed);
+  font-family: Arial, sans-serif;
+}
+
+.info h2 {
+  font-size: 22px;
+  color: #3e88b9;
+  margin: 15px 0;
+}
+
+.info h2::before {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  width: 32px;
+  background: url("../images/icon-home.png");
+  margin-bottom: -2px;
+  margin-right: 8px;
+}
+
+.info p {
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #43515a;
+}
+
+footer {
+  background-color: #4b7d9b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+footer h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+footer li, footer p {
+  font-size: 12px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: white;
+}
+
+footer a:hover {
+  color: #adcee4;
+}
+
+footer p {
+  line-height: 20px;
+}
+
+footer img {
+  margin: 15px 0;
+  width: 150px;
 }
 /*# sourceMappingURL=main.css.map */

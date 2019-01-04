@@ -1,0 +1,67 @@
+header {
+  background: radial-gradient(circle at 25% 15%, lighten($brand-first-clr, 10%) , transparent 50%),
+              linear-gradient($brand-first-clr, darken($brand-first-clr, 10%));
+  min-height: 550px;
+  color: $main-light-clr;
+
+  .top-part {
+
+    .logo-part {
+      padding: 15px 0 15px 20px;
+
+      p {
+        margin-left: 33px;
+        font-family: "Microsoft New Tai Lue";
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+
+    .phone-part {
+      padding: 15px 20px 15px 0;
+      font-family: "A Caslon Pro";
+      font-size: 24px;
+      text-align: right;
+    }
+  }
+
+  .nav-part {
+    min-height: 43px;
+    background-color: $nav-bg-clr;
+    color: $nav-txt-main-clr;
+    font-family: "Microsoft Sans Serif", sans-serif;
+    padding: 12px 0;
+    position: relative;
+    
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -4px;
+      height: 4px;
+      width: 100%;
+      background: linear-gradient(90deg, transparent, lighten($brand-first-clr, 20%) 30% 70%, transparent);
+    }
+
+    nav {
+      ul {
+        li {
+          padding: 0;
+
+          a:hover {
+            color: $nav-txt-hover-clr;
+          }
+        }
+        .menu-item, .sign-in {
+          margin-left: 35px;
+        }
+        .slash {
+          margin: 0 5px;
+        }
+        .sign-up {
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+}

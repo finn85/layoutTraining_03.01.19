@@ -1,2 +1,21 @@
 //Colors
-$brand-second-clr: #c2f2ed;
+$brand-first-clr: #316c93;
+
+//Background
+$nav-bg-clr: #d7d7d7;
+
+$info-bg-clr: #c2f2ed;
+
+$footer-bg-clr: #4b7d9b;
+
+//Text
+$main-light-clr: white;
+
+$nav-txt-main-clr: #3a5362;
+$nav-txt-hover-clr: lighten($brand-first-clr, 10%);
+
+$info-txt-h-clr: lighten($brand-first-clr, 10%);
+$info-txt-p-clr: #43515a;
+
+$footer-txt-a-clr: $main-light-clr;
+$footer-txt-hover-clr: lighten($brand-first-clr, 40%);

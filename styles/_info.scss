@@ -1,6 +1,27 @@
-@import 'variables';
-
 .info {
   min-height: 162px;
-  background-color: $brand-second-clr;
+  background: linear-gradient(lighten($info-bg-clr, 10%), $info-bg-clr);
+  font-family: Arial, sans-serif;
+
+  h2 {
+    font-size: 22px;
+    color: $info-txt-h-clr;
+    margin: 15px 0;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 30px;
+      width: 32px;
+      background: url('../images/icon-home.png');
+      margin-bottom: -2px;
+      margin-right: 8px;
+    }
+  }
+
+  p {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: $info-txt-p-clr;
+  }
 }
