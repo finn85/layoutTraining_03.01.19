@@ -1,11 +1,39 @@
 .catalogue {
   padding-bottom: 20px;
-
+  font-family:  "Microsoft Sans Serif", sans-serif;
+  color: $main-light-clr;
+  
   .item {
     margin: 20px auto 0;
     height: 202px;
     width: 220px;
-    background: gray;
+    background: $cat-address-bg-clr;
+    border-radius: 6px;
 
+    .description {
+      padding: 8px 0 5px 10px;
+      .address {
+        display: inline-block;
+  
+        .first-part {
+          font-size: 17px;
+        }
+      
+        .second-part {
+          font-size: 15px;
+        }
+      }
+  
+      .details {
+        display: inline-block;
+        width: 33px;
+        height: 27px;
+        background-color: transparent;
+        background-image: url('../images/icon-details.png');
+        border: none;
+        cursor: pointer;
+        margin-left: 6px;
+      }
+    }
   }
 }
