@@ -1,18 +1,23 @@
 footer {
-  background-color: $footer-bg-clr;
-  color: $main-light-clr;
   font-family: Arial, sans-serif;
+
+  color: $main-light-clr;
+  background-color: $footer-bg-clr;
 
   h3 {
     font-size: 15px;
     font-weight: bold;
+
     margin: 15px 0;
   }
 
-  li, p {
+  li,
+  p {
     font-size: 12px;
     font-weight: 100;
+
     margin-bottom: 10px;
+
     color: $footer-txt-a-clr;
   }
 
@@ -25,7 +30,7 @@ footer {
   }
 
   img {
-    margin: 15px 0;
     width: 150px;
+    margin: 15px 0;
   }
 }

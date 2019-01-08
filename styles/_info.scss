@@ -1,28 +1,37 @@
 .info {
-  min-height: 162px;
-  background: linear-gradient(lighten($info-bg-clr, 10%), $info-bg-clr);
   font-family: Arial, sans-serif;
+
+  min-height: 162px;
+
+  background: linear-gradient(lighten($info-bg-clr, 10%), $info-bg-clr);
 
   h2 {
     font-size: 22px;
-    color: $info-txt-h-clr;
+
     margin: 15px 0;
 
+    color: $info-txt-h-clr;
+
     &::before {
-      content: '';
       display: inline-block;
-      height: 30px;
+
       width: 32px;
-      background: url('../images/icon-home.png');
-      margin-bottom: -2px;
+      height: 30px;
       margin-right: 8px;
+      margin-bottom: -2px;
+
+      content: '';
+
+      background: url('../images/icon-home.png');
     }
   }
 
   p {
-    margin-bottom: 15px;
     font-size: 13px;
     line-height: 20px;
+
+    margin-bottom: 15px;
+
     color: $info-txt-p-clr;
   }
 }

@@ -1,45 +1,55 @@
 header {
-  background: radial-gradient(circle at 25% 15%, lighten($brand-first-clr, 10%) , transparent 50%),
-              linear-gradient($brand-first-clr, darken($brand-first-clr, 10%));
   min-height: 550px;
+
   color: $main-light-clr;
+  background: radial-gradient(circle at 25% 15%, lighten($brand-first-clr, 10%) , transparent 50%),
+  linear-gradient($brand-first-clr, darken($brand-first-clr, 10%));
 
   .top-part {
-
     .logo-part {
       padding: 15px 0 15px 20px;
 
       p {
-        margin-left: 33px;
-        font-family: "Microsoft New Tai Lue";
+        font-family: 'Microsoft New Tai Lue';
         font-size: 16px;
         line-height: 16px;
+
+        margin-left: 33px;
       }
     }
 
     .phone-part {
-      padding: 15px 20px 15px 0;
-      font-family: "A Caslon Pro";
+      font-family: 'A Caslon Pro';
       font-size: 24px;
+
+      padding: 15px 20px 15px 0;
+
       text-align: right;
     }
   }
 
   .nav-part {
-    min-height: 43px;
-    background-color: $nav-bg-clr;
-    color: $nav-txt-main-clr;
-    font-family: "Microsoft Sans Serif", sans-serif;
-    padding: 12px 0;
+    font-family: 'Microsoft Sans Serif', sans-serif;
+
     position: relative;
-    
+
+    min-height: 43px;
+    padding: 12px 0;
+
+    color: $nav-txt-main-clr;
+    background-color: $nav-bg-clr;
+
     &::after {
-      content: '';
-      display: block;
       position: absolute;
       bottom: -4px;
-      height: 4px;
+
+      display: block;
+
       width: 100%;
+      height: 4px;
+
+      content: '';
+
       background: linear-gradient(90deg, transparent, lighten($brand-first-clr, 20%) 30% 70%, transparent);
     }
 
@@ -52,16 +62,91 @@ header {
             color: $nav-txt-hover-clr;
           }
         }
-        .menu-item, .sign-in {
+
+        .menu-item,
+        .sign-in {
           margin-left: 35px;
         }
+
         .slash {
           margin: 0 5px;
         }
+
         .sign-up {
           margin-right: 35px;
         }
       }
+    }
+  }
+
+  .bottom-part {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .slider {
+      .card {
+        font-size: 0;
+
+        padding: 10px;
+
+        background-color: $slider-bg-clr;
+
+        img {
+          width: 100%;
+
+          border-bottom: 1px solid $brand-first-clr;
+        }
+
+        .description {
+          font-family: Arial, sans-serif;
+
+          padding: 10px 20px;
+
+          background-color: $slider-desc-bg-clr;
+
+          h3 {
+            font-size: 20px;
+            font-weight: 100;
+
+            letter-spacing: 1px;
+          }
+
+          p {
+            font-size: 14px;
+
+            padding-top: 5px;
+          }
+        }
+      }
+
+      .card-toggle {
+        display: flex;
+
+        justify-content: center;
+
+        .card-toggler {
+          display: inline-block;
+
+          width: 15px;
+          height: 15px;
+          margin: 20px 5px 0;
+
+          cursor: pointer;
+
+          border-radius: 50%;
+          background-color: $slider-toggler-bg-clr;
+        }
+
+        .active {
+          background-color: $slider-toggler-active-bg-clr;
+        }
+      }
+    }
+
+    .search {
+      height: 100%;
+
+      background: #000;
     }
   }
 }

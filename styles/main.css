@@ -9,14 +9,16 @@ li {
 
 a {
   text-decoration: none;
+
   color: inherit;
 }
 
 header {
+  min-height: 550px;
+
+  color: white;
   background: radial-gradient(circle at 25% 15%, #3e88b9, transparent 50%), -webkit-gradient(linear, left top, left bottom, from(#316c93), to(#24506d));
   background: radial-gradient(circle at 25% 15%, #3e88b9, transparent 50%), linear-gradient(#316c93, #24506d);
-  min-height: 550px;
-  color: white;
 }
 
 header .top-part .logo-part {
@@ -24,35 +26,45 @@ header .top-part .logo-part {
 }
 
 header .top-part .logo-part p {
-  margin-left: 33px;
-  font-family: "Microsoft New Tai Lue";
+  font-family: 'Microsoft New Tai Lue';
   font-size: 16px;
   line-height: 16px;
+
+  margin-left: 33px;
 }
 
 header .top-part .phone-part {
-  padding: 15px 20px 15px 0;
-  font-family: "A Caslon Pro";
+  font-family: 'A Caslon Pro';
   font-size: 24px;
+
+  padding: 15px 20px 15px 0;
+
   text-align: right;
 }
 
 header .nav-part {
-  min-height: 43px;
-  background-color: #d7d7d7;
-  color: #3a5362;
-  font-family: "Microsoft Sans Serif", sans-serif;
-  padding: 12px 0;
+  font-family: 'Microsoft Sans Serif', sans-serif;
+
   position: relative;
+
+  min-height: 43px;
+  padding: 12px 0;
+
+  color: #3a5362;
+  background-color: #d7d7d7;
 }
 
 header .nav-part::after {
-  content: '';
-  display: block;
   position: absolute;
   bottom: -4px;
-  height: 4px;
+
+  display: block;
+
   width: 100%;
+  height: 4px;
+
+  content: '';
+
   background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(30%, #60a0ca), to(transparent));
   background: linear-gradient(90deg, transparent, #60a0ca 30% 70%, transparent);
 }
@@ -65,7 +77,8 @@ header .nav-part nav ul li a:hover {
   color: #3e88b9;
 }
 
-header .nav-part nav ul .menu-item, header .nav-part nav ul .sign-in {
+header .nav-part nav ul .menu-item,
+header .nav-part nav ul .sign-in {
   margin-left: 35px;
 }
 
@@ -77,48 +90,133 @@ header .nav-part nav ul .sign-up {
   margin-right: 35px;
 }
 
+header .bottom-part {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header .bottom-part .slider .card {
+  font-size: 0;
+
+  padding: 10px;
+
+  background-color: #f2e7e7;
+}
+
+header .bottom-part .slider .card img {
+  width: 100%;
+
+  border-bottom: 1px solid #316c93;
+}
+
+header .bottom-part .slider .card .description {
+  font-family: Arial, sans-serif;
+
+  padding: 10px 20px;
+
+  background-color: #1a425a;
+}
+
+header .bottom-part .slider .card .description h3 {
+  font-size: 20px;
+  font-weight: 100;
+
+  letter-spacing: 1px;
+}
+
+header .bottom-part .slider .card .description p {
+  font-size: 14px;
+
+  padding-top: 5px;
+}
+
+header .bottom-part .slider .card-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+header .bottom-part .slider .card-toggle .card-toggler {
+  display: inline-block;
+
+  width: 15px;
+  height: 15px;
+  margin: 20px 5px 0 5px;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+  background-color: white;
+}
+
+header .bottom-part .slider .card-toggle .active {
+  background-color: #193b50;
+}
+
+header .bottom-part .search {
+  height: 100%;
+
+  background: #000;
+}
+
 .info {
+  font-family: Arial, sans-serif;
+
   min-height: 162px;
+
   background: -webkit-gradient(linear, left top, left bottom, from(#ecfbf9), to(#c2f2ed));
   background: linear-gradient(#ecfbf9, #c2f2ed);
-  font-family: Arial, sans-serif;
 }
 
 .info h2 {
   font-size: 22px;
-  color: #3e88b9;
+
   margin: 15px 0;
+
+  color: #3e88b9;
 }
 
 .info h2::before {
-  content: '';
   display: inline-block;
-  height: 30px;
+
   width: 32px;
-  background: url("../images/icon-home.png");
-  margin-bottom: -2px;
+  height: 30px;
   margin-right: 8px;
+  margin-bottom: -2px;
+
+  content: '';
+
+  background: url('../images/icon-home.png');
 }
 
 .info p {
-  margin-bottom: 15px;
   font-size: 13px;
   line-height: 20px;
+
+  margin-bottom: 15px;
+
   color: #43515a;
 }
 
 .catalogue {
+  font-family: 'Microsoft Sans Serif', sans-serif;
+
   padding-bottom: 20px;
-  font-family: "Microsoft Sans Serif", sans-serif;
+
   color: white;
 }
 
 .catalogue .item {
-  margin: 20px auto 0;
-  height: 202px;
   width: 220px;
-  background: #4d94c4;
+  height: 202px;
+  margin: 20px auto 0;
+
   border-radius: 6px;
+  background: #4d94c4;
 }
 
 .catalogue .item .description {
@@ -139,83 +237,107 @@ header .nav-part nav ul .sign-up {
 
 .catalogue .item .description .details {
   display: inline-block;
+
   width: 33px;
   height: 27px;
-  background-color: transparent;
-  background-image: url("../images/icon-details.png");
-  border: none;
-  cursor: pointer;
   margin-left: 6px;
+
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+  background-image: url('../images/icon-details.png');
 }
 
 .membership {
   font-family: Arial, sans-serif;
+
+  padding-top: 20px;
+
   color: white;
   background-color: #6293a8;
-  padding-top: 10px;
 }
 
-.membership .member-login, .membership .subscribe {
+.membership .member-login,
+.membership .subscribe {
+  margin-bottom: 20px;
+  padding: 15px;
+
   border: 1px solid #d7d7d7;
   border-radius: 5px;
   background: -webkit-gradient(linear, left top, left bottom, from(#86b7d7), to(#60a0ca));
   background: linear-gradient(#86b7d7, #60a0ca);
-  margin-bottom: 10px;
-  padding: 15px;
 }
 
-.membership .member-login h3, .membership .subscribe h3 {
+.membership .member-login h3,
+.membership .subscribe h3 {
   font-weight: normal;
 }
 
-.membership .member-login input, .membership .member-login button, .membership .subscribe input, .membership .subscribe button {
+.membership .member-login input,
+.membership .member-login button,
+.membership .subscribe input,
+.membership .subscribe button {
+  font-size: 16px;
+
+  height: 32px;
   margin-top: 10px;
+
   border: none;
   border-radius: 5px;
-  height: 32px;
-  font-size: 16px;
 }
 
-.membership .member-login input::-webkit-input-placeholder, .membership .subscribe input::-webkit-input-placeholder {
+.membership .member-login input::-webkit-input-placeholder,
+.membership .subscribe input::-webkit-input-placeholder {
   color: #3e88b9;
 }
 
-.membership .member-login input:-ms-input-placeholder, .membership .subscribe input:-ms-input-placeholder {
+.membership .member-login input:-ms-input-placeholder,
+.membership .subscribe input:-ms-input-placeholder {
   color: #3e88b9;
 }
 
-.membership .member-login input::-ms-input-placeholder, .membership .subscribe input::-ms-input-placeholder {
+.membership .member-login input::-ms-input-placeholder,
+.membership .subscribe input::-ms-input-placeholder {
   color: #3e88b9;
 }
 
-.membership .member-login input::placeholder, .membership .subscribe input::placeholder {
+.membership .member-login input::placeholder,
+.membership .subscribe input::placeholder {
   color: #3e88b9;
 }
 
-.membership .member-login button, .membership .subscribe button {
-  color: white;
+.membership .member-login button,
+.membership .subscribe button {
   cursor: pointer;
+
+  color: white;
+  border: 3px solid #d7d7d7;
   background: -webkit-gradient(linear, left top, left bottom, from(#4d94c4), to(#3e88b9));
   background: linear-gradient(#4d94c4, #3e88b9);
-  border: 3px solid #d7d7d7;
 }
 
 footer {
-  background-color: #4b7d9b;
-  color: white;
   font-family: Arial, sans-serif;
+
+  color: white;
+  background-color: #4b7d9b;
 }
 
 footer h3 {
   font-size: 15px;
   font-weight: bold;
+
   margin: 15px 0;
 }
 
-footer li, footer p {
+footer li,
+footer p {
   font-size: 12px;
   font-weight: 100;
+
   margin-bottom: 10px;
+
   color: white;
 }
 
@@ -228,7 +350,7 @@ footer p {
 }
 
 footer img {
-  margin: 15px 0;
   width: 150px;
+  margin: 15px 0;
 }
 /*# sourceMappingURL=main.css.map */

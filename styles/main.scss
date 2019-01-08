@@ -9,13 +9,19 @@ li {
 
 a {
   text-decoration: none;
+
   color: inherit;
 }
+
 @import 'variables';
 
 @import 'header';
+
 @import 'info';
+
 @import 'catalogue';
+
 @import 'membership';
+
 @import 'footer';
 

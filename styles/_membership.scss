@@ -1,25 +1,33 @@
 .membership {
   font-family: Arial, sans-serif;
+
+  padding-top: 20px;
+
   color: $main-light-clr;
   background-color: $memb-bg-clr;
-  padding-top: 10px;
-  .member-login, .subscribe {
+
+  .member-login,
+  .subscribe {
+    margin-bottom: 20px;
+    padding: 15px;
+
     border: 1px solid $memb-border-clr;
     border-radius: 5px;
     background: linear-gradient(lighten($memb-items-bg-clr, 15%), lighten($memb-items-bg-clr, 5%));
-    margin-bottom: 10px;
-    padding: 15px;
 
     h3 {
       font-weight: normal;
     }
 
-    input, button {
-      margin-top: 10px;
-      border: none;
-      border-radius: 5px;
-      height: 32px;
+    input,
+    button {
       font-size: 16px;
+
+      height: 32px;
+      margin-top: 10px;
+
+      border: 0;
+      border-radius: 5px;
     }
 
     input {
@@ -27,13 +35,13 @@
         color: $memb-plchold-clr;
       }
     }
-    
+
     button {
-      color: $main-light-clr;
       cursor: pointer;
-      background: linear-gradient($memb-items-bg-clr, darken($memb-items-bg-clr, 5%));
+
+      color: $main-light-clr;
       border: 3px solid $memb-border-clr;
+      background: linear-gradient($memb-items-bg-clr, darken($memb-items-bg-clr, 5%));
     }
   }
- 
 }
