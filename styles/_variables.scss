@@ -8,6 +8,9 @@ $info-bg-clr: #c2f2ed;
 
 $cat-address-bg-clr: lighten($brand-first-clr, 15%);
 
+$memb-bg-clr: #6293a8;
+$memb-items-bg-clr: lighten($brand-first-clr, 15%);
+
 $footer-bg-clr: #4b7d9b;
 
 //Text
@@ -19,6 +22,11 @@ $nav-txt-hover-clr: lighten($brand-first-clr, 10%);
 $info-txt-h-clr: lighten($brand-first-clr, 10%);
 $info-txt-p-clr: #43515a;
 
+$memb-plchold-clr: lighten($brand-first-clr, 10%);
 
 $footer-txt-a-clr: $main-light-clr;
 $footer-txt-hover-clr: lighten($brand-first-clr, 40%);
+
+//Other
+
+$memb-border-clr: #d7d7d7;

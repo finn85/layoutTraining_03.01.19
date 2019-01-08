@@ -149,8 +149,55 @@ header .nav-part nav ul .sign-up {
 }
 
 .membership {
-  height: 50px;
-  background: red;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #6293a8;
+  padding-top: 10px;
+}
+
+.membership .member-login, .membership .subscribe {
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#86b7d7), to(#60a0ca));
+  background: linear-gradient(#86b7d7, #60a0ca);
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.membership .member-login h3, .membership .subscribe h3 {
+  font-weight: normal;
+}
+
+.membership .member-login input, .membership .member-login button, .membership .subscribe input, .membership .subscribe button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 32px;
+  font-size: 16px;
+}
+
+.membership .member-login input::-webkit-input-placeholder, .membership .subscribe input::-webkit-input-placeholder {
+  color: #3e88b9;
+}
+
+.membership .member-login input:-ms-input-placeholder, .membership .subscribe input:-ms-input-placeholder {
+  color: #3e88b9;
+}
+
+.membership .member-login input::-ms-input-placeholder, .membership .subscribe input::-ms-input-placeholder {
+  color: #3e88b9;
+}
+
+.membership .member-login input::placeholder, .membership .subscribe input::placeholder {
+  color: #3e88b9;
+}
+
+.membership .member-login button, .membership .subscribe button {
+  color: white;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4d94c4), to(#3e88b9));
+  background: linear-gradient(#4d94c4, #3e88b9);
+  border: 3px solid #d7d7d7;
 }
 
 footer {
