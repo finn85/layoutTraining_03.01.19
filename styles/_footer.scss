@@ -21,12 +21,12 @@ footer {
     color: $footer-txt-a-clr;
   }
 
-  a:hover {
-    color: $footer-txt-hover-clr;
-  }
-
   p {
     line-height: 20px;
+  }
+
+  a:hover {
+    color: $footer-txt-hover-clr;
   }
 
   img {

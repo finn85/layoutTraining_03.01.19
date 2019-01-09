@@ -1,25 +1,43 @@
 //Colors
 $brand-first-clr: #316c93;
 
-//Background
+//Backgrounds colors
 $nav-bg-clr: #d7d7d7;
+
+$search-bg-clr: lighten($brand-first-clr, 10%);
+$search-bg-clr-notactive: lighten($brand-first-clr, 20%);
+$search-inputs-bg-clr: #f4f4f4;
+$search-input-address-border-bg-clr: darken($brand-first-clr, 10%);
+$search-input-numver-border-bg-clr: #bbb;
+$search-button-bg-clr: #245474;
+
 $slider-bg-clr: #f2e7e7;
 $slider-desc-bg-clr: #1a425a;
 $slider-toggler-bg-clr: #fff;
 $slider-toggler-active-bg-clr: #193b50;
+
 $info-bg-clr: #c2f2ed;
+
 $cat-address-bg-clr: lighten($brand-first-clr, 15%);
+
 $memb-bg-clr: #6293a8;
 $memb-items-bg-clr: lighten($brand-first-clr, 15%);
+
 $footer-bg-clr: #4b7d9b;
 
-//Text
+//Text colors
 $main-light-clr: #fff;
+
 $nav-txt-main-clr: #3a5362;
 $nav-txt-hover-clr: lighten($brand-first-clr, 10%);
+
+$search-plchold-clr: lighten($brand-first-clr, 10%);
+
 $info-txt-h-clr: lighten($brand-first-clr, 10%);
 $info-txt-p-clr: #43515a;
+
 $memb-plchold-clr: lighten($brand-first-clr, 10%);
+
 $footer-txt-a-clr: $main-light-clr;
 $footer-txt-hover-clr: lighten($brand-first-clr, 40%);
 

@@ -13,5 +13,7 @@
   "license": "ISC",
   "sasslintConfig": "sass-lint.yml",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "sass-lint": "1.12.1"
+  }
 }

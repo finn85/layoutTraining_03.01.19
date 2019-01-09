@@ -70,7 +70,7 @@ rules:
   mixins-before-declarations: 1
   nesting-depth:
     - 1
-    - max-depth: 10
+    - max-depth: 3
   no-color-keywords: 1
   no-color-literals: 0
   no-css-comments: 0
@@ -87,7 +87,7 @@ rules:
     - extra-properties: []
   no-qualifying-elements:
     - 1
-    - allow-element-with-attribute: false
+    - allow-element-with-attribute: true
       allow-element-with-class: false
       allow-element-with-id: false
   no-trailing-zero: 1
